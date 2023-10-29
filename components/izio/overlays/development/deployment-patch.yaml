@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: izio
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-qoxf-tenant/byoc-app-hbje/izio@sha256:fe02a6d1ae510ac2a08fbcb0b7f47cbab9fcebf33d018dfbc4e8c265fa9129e5
+        name: my-java-quarkus
+        resources: {}
+status: {}
